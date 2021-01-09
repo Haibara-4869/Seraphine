@@ -12,7 +12,7 @@ while (1)
   for (i=1;i<=5;i++)
   printf("%d ",e+=f);
   printf("\n");}
-  if (a*c==b*b&&b*d==c*c&&e*c==d*d)
+  if (a*c==b*b&&b*d==c*c&&e*c==d*d&&a!=0)
    {
    printf("case two\n");
    int g =b/a;
@@ -21,7 +21,7 @@ while (1)
    printf("\n");}
    if (c==a+b&&d==c+b&&e==d+c){
   printf("case three\n");
-  int m[10]={a,b,c,d,e};
+  int m[9]={a,b,c,d,e};
   for (i=1;i<=5;i++)
   printf("%d ",m[4+i]=m[3+i]+m[2+i]);
   }
