@@ -1,20 +1,22 @@
 #include<stdio.h>
 int main()
 {
-	int a,b,t=0,c,d,i,m,n,T,j[100];
-	scanf("%d",&T);
-	for(i=0;i<T;i++){
-		scanf("%d %d",&m,&n);
-		for(a=m;a<=n;a++){
-			b=a%10;
-			c=(a%100)/10;
-			d=a/100;
-	if(a==b*b*b+c*c*c+d*d*d){
-		t=1;
-		printf("%d ",a);
-		}
-		}
-		if(t==0)
-		printf("-1\n");
- }
-}
+	int a,b,c,d,e,i,j,k,t=0;
+	scanf("%d",&d);
+	for(c=0;c<d;c++){
+	scanf("%d%d",&a,&b);
+	for(e=a;e<=b;e++){
+		i=e%10;
+		j=e/10%10;
+		k=e/100%10;
+		if(e==i*i*i+j*j*j+k*k*k){
+		printf("%d ",e);
+		t=1;}
+	}
+	if(t==1)
+		printf("\n");
+	if(t==0)
+	printf("-1\n");
+	}
+	
+ } 
